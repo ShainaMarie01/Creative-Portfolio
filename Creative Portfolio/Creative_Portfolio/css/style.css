@@ -194,6 +194,124 @@ p.a {
 }
 
 
+/* =======================================
+   RESPONSIVE DESIGN FIXES
+   ======================================= */
+
+/* Base font resizing for small screens */
+@media (max-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+
+  .display-1 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .display-2 {
+    font-size: 2.2rem;
+  }
+
+  h2, h3, h4 {
+    font-size: calc(1rem + 1vw);
+  }
+
+  .p-6 {
+    padding: 2rem !important;
+  }
+
+  .portfolio {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .navbar-nav a.nav-link {
+    padding: 0.75rem 1rem;
+  }
+
+  .display-1 {
+    font-size: 2.6rem;
+  }
+
+  .display-2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-item a {
+    aspect-ratio: 4 / 3; /* slightly wider for mobile */
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  #footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #footer .contact-info {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Mobile (phones) */
+@media (max-width: 576px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .display-1 {
+    font-size: 2.2rem;
+  }
+
+  .display-2 {
+    font-size: 1.6rem;
+  }
+
+  .portfolio-item a {
+    aspect-ratio: 1 / 1; /* square grid for mobile */
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .accordion-item {
+    font-size: 0.9rem;
+  }
+
+  .page-link {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Ensure videos and images scale properly */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Center text and buttons on small screens */
+.text-center-sm {
+  text-align: center !important;
+}
+
+.mb-sm-3 {
+  margin-bottom: 1rem !important;
+}
+
 
 
 /* 3.5 FAQs
